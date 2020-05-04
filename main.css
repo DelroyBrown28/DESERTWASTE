@@ -1,0 +1,303 @@
+body,
+html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+
+}
+
+.small_text {
+    font-size: 0.7em;
+}
+
+.houdini {
+    visibility: hidden;
+
+}
+
+
+
+.dark_cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+#BGVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main_title_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    z-index: 2;
+    transition: 0.3s;
+
+
+
+}
+
+.main_title {
+    position: relative;
+    margin: 0;
+    font-size: 3em;
+    color: #FACEEA;
+    display: flex;
+
+
+}
+
+.small_title {
+    position: relative;
+    color: #fff;
+}
+
+.button_to_store {
+    position: relative;
+    width: 200px;
+    height: 45px;
+    margin-top: 35px;
+    color: #fff;
+    border: none;
+    border: 1px solid #FACEEA;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.socials {
+    position: absolute;
+    width: 4%;
+    height: 3%;
+    z-index: 2;
+    bottom: 5%;
+    left: 3%;
+
+}
+
+.fa-instagram,
+.fa-youtube {
+    position: absolute;
+    font-size: 1.7em;
+    color: #fff;
+    opacity: 0.3;
+    cursor: pointer;
+    animation-name: quickFlash;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: 0.3s;
+}
+
+.fa-youtube {
+    right: 3%;
+    animation-delay: 200ms;
+
+}
+
+.fa-youtube {
+    animation-delay: 300ms;
+
+
+}
+
+@keyframes quickFlash {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*-----STORE PAGE-----*/
+
+#store_wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    flex-flow: row;
+    display: none;
+
+    border: 1px solid white;
+}
+
+.outfit1_wrap,
+.outfit1_info {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    z-index: 4;
+
+}
+
+.outfit1_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.outfit1_infoCard {
+    position: relative;
+    width: 37%;
+    background-color: #E4C4B5;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 30px;
+    background: #E4C4B5;
+    box-shadow: inset 11px 11px 22px #c9ac9f, 
+                inset -11px -11px 22px #ffdccb;
+}
+
+.outfit_title {
+    position: relative;
+    margin: 0;
+    top: 5%;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+
+}
+
+.outfit_price {
+    position: relative;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    font-size: 1.3em;
+
+}
+
+.theLine {
+    position: relative;
+    width: 80%;
+    border: 0.7px solid black;
+}
+
+.outfit_size {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 2% 0% 4% 0%;
+    font-size: 1em;
+
+}
+
+.pick_outfitSize_wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.size_small,
+.size_medium,
+.size_large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #906D59;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.size_medium {
+    margin: 0% 8% 0% 8%;
+}
+
+
+.outfit1_longsleevetop {
+    position: absolute;
+    z-index: 5;
+    display: none;
+    left: 200%;
+
+}
+
+.add_to_basket {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 32%;
+    border-radius: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.basket_icon {
+    height: 28px;
+}
+
+.addtobasket_text {
+    position: absolute;
+    bottom: 29.5%;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #906D59;
+}
+
+/*-----HOVERS AND SUCH...-----*/
+
+
+.button_to_store:hover {
+    background-color: #FACEEA;
+    color: #000;
+}
+
+.button_to_store:active {
+    background-color: transparent;
+    color: #fff;
+    transition: 0.1s;
+}
+
+.fa-instagram:hover,
+.fa-youtube:hover {
+    opacity: 1;
+}
+
+.size_small:hover, .size_medium:hover, .size_large:hover {
+    background-color: #fff;
+}
