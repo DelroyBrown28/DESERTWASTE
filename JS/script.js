@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-
-
-
-
     $(".button_to_store").click(function() {
         $(".dark_cover").css({"background-color": "#E4C4B5", "opacity": "1"});
         $("#BGVideo").addClass("houdini");
@@ -13,11 +9,14 @@ $(document).ready(function() {
 
         $("#store_wrap").css({"display": "flex"});
         $(".outfit1_longsleevetop").css({"display": "block"});
-        $(".outfit1_longsleevetop").animate({
+        $(".outfit1_longsleevetop, .outfit1_infoCard").animate({
             left: "0",
-        })
+        });
+        $(".more_outfit_info").animate({
+            opacity: "1",
+        }, 1000);
 
-    })
+    });
 
 })
 

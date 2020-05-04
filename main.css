@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+
 body,
 html {
     margin: 0;
@@ -167,6 +170,7 @@ html {
     position: relative;
     width: 37%;
     background-color: #E4C4B5;
+    right: 500%;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -174,8 +178,8 @@ html {
     padding: 10px;
     border-radius: 30px;
     background: #E4C4B5;
-    box-shadow: inset 11px 11px 22px #c9ac9f, 
-                inset -11px -11px 22px #ffdccb;
+    box-shadow: inset 11px 11px 22px #c9ac9f,
+        inset -11px -11px 22px #ffdccb;
 }
 
 .outfit_title {
@@ -243,6 +247,23 @@ html {
     margin: 0% 8% 0% 8%;
 }
 
+.more_outfit_info {
+    position: absolute;
+    top: 28%;
+    opacity: 0;
+}
+
+
+.outfitInfo_text {
+    margin: 0;
+    font-size: 1em;
+    line-height: 23px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+
+}
+
 
 .outfit1_longsleevetop {
     position: absolute;
@@ -298,6 +319,8 @@ html {
     opacity: 1;
 }
 
-.size_small:hover, .size_medium:hover, .size_large:hover {
+.size_small:hover,
+.size_medium:hover,
+.size_large:hover {
     background-color: #fff;
 }
